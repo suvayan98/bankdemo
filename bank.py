@@ -69,5 +69,6 @@ while True:
                         print(i)
         else:
             print("*Wrong Password*\nYou can not access Manager folder.")
-    elif x==6:
+    elif x>=6:
         break
+        print("Number is not there")
