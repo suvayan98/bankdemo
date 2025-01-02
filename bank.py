@@ -44,7 +44,10 @@ while True:
         ab=l[no-1]
         cd=ab[-1]
         ammount=cd-withdraw
-        ab[-1]=ammount
+        if ammount<=0:
+            ab[-1]=0
+        else:
+            ab[-1]=ammount
     elif x==3:
         no=int(input("Enter your Account number:"))
         diposit=int(input("Enter the Amount:"))
